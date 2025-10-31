@@ -18,9 +18,9 @@ export const HeroSection = () => {
           <Link
             to="/borrow-summary"
             aria-label=""
-            className="w-36 bg-black text-white px-4 py-2 flex items-center "
+            className="w-40 bg-black text-white px-4 py-2 flex items-center justify-center"
           >
-            See borrows
+            Browse Books
             <svg
               className="inline-block w-3 ml-2"
               fill="currentColor"

@@ -91,7 +91,7 @@ export default function Books() {
     );
 
   return (
-    <div>
+    <div className="container mx-auto px-6 lg:px-10">
       {location.pathname === "/books" ? (
         <Helmet>
           <title>All Books</title>
@@ -101,7 +101,7 @@ export default function Books() {
         ""
       )}
 
-      <div className="mb-6 flex justify-between">
+      <div className="mb-6 ">
         {location.pathname === "/books" ? (
           <h1 className="text-2xl font-bold ">All Books</h1>
         ) : (
@@ -109,24 +109,27 @@ export default function Books() {
         )}
 
         {location.pathname !== "/books" && (
-          <Link
-            to="/books"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 dark:text-deep-purple-300 hover:text-deep-purple-800 dark:hover:text-deep-purple-500"
-          >
-            All Books
-            <svg
-              className="inline-block w-3 ml-2"
-              fill="currentColor"
-              viewBox="0 0 12 12"
+          <div className="flex items-center justify-between">
+            <h3 className="text-3xl font-semibold">Featured Books</h3>
+            <Link
+              to="/books"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 dark:text-deep-purple-300 hover:text-deep-purple-800 dark:hover:text-deep-purple-500"
             >
-              <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-            </svg>
-          </Link>
+              All Books
+              <svg
+                className="inline-block w-3 ml-2"
+                fill="currentColor"
+                viewBox="0 0 12 12"
+              >
+                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+              </svg>
+            </Link>
+          </div>
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {isLoading || isPaginationLoading
           ? Array.from({ length: 9 }).map((_, i) => <CardSkeleton key={i} />)
           : slicedBooks?.map((book) => (
