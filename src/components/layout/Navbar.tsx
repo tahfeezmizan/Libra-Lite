@@ -2,22 +2,22 @@ import { useState } from "react";
 import { Link } from "react-router";
 import bookIcon from "../../assets/book.svg";
 
-export const Nav = () => {
+export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="px-4 py-5 mx-auto text-black dark:text-white  md:px-24 lg:px-8  sticky top-0 backdrop-blur-lg bg-white/50 dark:bg-neutral-950/50 border-b">
-      <nav className="container mx-auto z-50 border-red-500 ">
+    <div className=" py-5 text-black dark:text-white   sticky top-0 backdrop-blur-lg bg-white/50 dark:bg-neutral-950/50 border-b">
+      <nav className="container mx-auto px-6 lg:px-10 z-50 ">
         <div className="relative flex items-center">
           <div className="flex-1 flex items-center">
-            <Link className="inline-flex items-center mr-8" to={"/"}>
+            <Link className="inline-flex gap-2" to={"/"}>
               <img
                 src={bookIcon}
                 alt="book"
                 className="w-8 dark:invert text-black dark:text-white"
               />
-              <span className="ml-2 text-lg font-bold tracking-wide uppercase">
-                Books
+              <span className="text-xl font-bold tracking-wide ">
+                LibraLite
               </span>
             </Link>
           </div>
