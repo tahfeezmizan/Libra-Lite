@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import bookIcon from "../../assets/book.svg";
 export const Footer = () => {
   return (
-    <footer className="container mx-auto px-2 md:px-6 lg:px-10 pt-6">
+    <footer className="container mx-auto px-2 md:px-6 lg:px-10 pt-10">
       <div className="grid gap-16 mb-8 lg:grid-cols-6">
         <div className=" lg:col-span-2">
           <Link className="inline-flex items-center mr-8" to={"/"}>

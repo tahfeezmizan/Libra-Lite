@@ -65,9 +65,9 @@ export function LatestNews({
 }: LatestNewsSectionProps) {
   return (
     <section className="bg-[#F5F5F5]">
-      <div className="container mx-auto px-6 lg:px-10 z-50 py-20">
+      <div className="container mx-auto px-6 lg:px-10 pt-12 py-16">
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-8">
           <h2 className="text-3xl font-semibold">{title}</h2>
         </div>
 
