@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/layout/HeroSection";
 import { Helmet } from "react-helmet";
 import Books from "./Books";
 import { Statistic } from "@/components/layout/Statistic";
+import { LatestNews } from "./latest-news";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       <HeroSection />
       <Books />
       <Statistic />
+      <LatestNews />
     </div>
   );
 };

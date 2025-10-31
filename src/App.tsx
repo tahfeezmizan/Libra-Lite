@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="w-11/12 mx-auto lg:w-11/12 md:w-11/12 xl:container">
-        <div className="min-h-[calc(100vh-441px)]">
+      <div className="">
+        <div className="">
           <Outlet />
           <ScrollToTop />
         </div>
