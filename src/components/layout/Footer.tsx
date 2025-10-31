@@ -65,7 +65,7 @@ export const Footer = () => {
 
       <div className="flex flex-col justify-center pt-5 pb-10 border-t border-gray-300 dark:border-gray-700 sm:flex-row">
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          © Copyright {new Date().getFullYear()} Md Ranju. All rights reserved.
+          © Copyright {new Date().getFullYear()} Tahfeez Mizan. All rights reserved.
         </p>
       </div>
     </footer>

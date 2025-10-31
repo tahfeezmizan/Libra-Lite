@@ -25,7 +25,7 @@ export const Navbar = () => {
             <ul className="flex-1 items-center hidden space-x-8 lg:flex">
               <Link to={"/books"}>
                 <li className="font-medium tracking-wide text-black dark:text-white transition-colors duration-200 hover:underline">
-                  All Books
+                  Explore the Library
                 </li>
               </Link>
               <Link to={"/create-book"}>
