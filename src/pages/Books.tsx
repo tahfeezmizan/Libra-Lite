@@ -91,7 +91,7 @@ export default function Books() {
     );
 
   return (
-    <div className="container mx-auto px-6 lg:px-10">
+    <div className="container mx-auto px-2 md:px-6 lg:px-10">
       {location.pathname === "/books" ? (
         <Helmet>
           <title>All Books</title>
@@ -129,7 +129,7 @@ export default function Books() {
         )}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {isLoading || isPaginationLoading
           ? Array.from({ length: 9 }).map((_, i) => <CardSkeleton key={i} />)
           : slicedBooks?.map((book) => (

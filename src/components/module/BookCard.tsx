@@ -18,9 +18,9 @@ export default function BookCard({
   onBorrow,
 }: BookCardProps) {
   return (
-    <Card className="rounded-2xl border-none shadow-none group p-0 bg-[#F5F5F5]">
+    <Card className="rounded-2xl border-none shadow-none group p-0 bg-[#F5F5F5] ">
       <CardContent className="space-y-2 p-0 ">
-        <div className="relative bg-[#F5F5F5] rounded-lg p-5 pb-0">
+        <div className="relative bg-[#F5F5F5] rounded-lg p-5 pb-0 ">
           <p
             className={`absolute top-4 right-4 bg-green-700  px-3 py-1 rounded-2xl text-sm font-medium ${
               book.available

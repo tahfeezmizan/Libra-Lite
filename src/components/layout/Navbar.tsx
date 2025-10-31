@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className=" py-5 text-black dark:text-white   sticky top-0 backdrop-blur-lg bg-white/50 dark:bg-neutral-950/50 border-b">
+    <div className=" py-5 text-black dark:text-white   sticky top-0 backdrop-blur-lg bg-white/50 dark:bg-neutral-950/50 border-b z-50">
       <nav className="container mx-auto px-6 lg:px-10 z-50 ">
         <div className="relative flex items-center">
           <div className="flex-1 flex items-center">

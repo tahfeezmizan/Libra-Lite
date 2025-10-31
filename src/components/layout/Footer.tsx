@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import bookIcon from "../../assets/book.svg";
 export const Footer = () => {
   return (
-    <footer className="px-4 pt-16 mx-auto   md:px-24 lg:px-8 container">
+    <footer className="container mx-auto px-2 md:px-6 lg:px-10 pt-6">
       <div className="grid gap-16 mb-8 lg:grid-cols-6">
         <div className=" lg:col-span-2">
           <Link className="inline-flex items-center mr-8" to={"/"}>
@@ -11,8 +11,8 @@ export const Footer = () => {
               alt="book"
               className="w-8 text-black dark:text-white dark:invert"
             />
-            <span className="ml-2 text-lg font-bold tracking-wide uppercase">
-              Books
+            <span className="ml-2 text-lg font-bold tracking-wide">
+              LibraLite
             </span>
           </Link>
           <div className="mt-4 text-sm text-gray-800 dark:text-gray-400 space-y-4 lg:max-w-sm">
@@ -23,7 +23,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 lg:col-span-4 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-5 lg:col-span-4 md:grid-cols-3">
           {[
             {
               title: "Category",
@@ -36,10 +36,6 @@ export const Footer = () => {
             {
               title: "Apples",
               links: ["Media", "Brochure", "Nonprofit"],
-            },
-            {
-              title: "Cherry",
-              links: ["Infopreneur", "Personal", "Wiki"],
             },
           ].map((section) => (
             <div key={section.title}>
@@ -65,7 +61,8 @@ export const Footer = () => {
 
       <div className="flex flex-col justify-center pt-5 pb-10 border-t border-gray-300 dark:border-gray-700 sm:flex-row">
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          © Copyright {new Date().getFullYear()} Tahfeez Mizan. All rights reserved.
+          © Copyright {new Date().getFullYear()} Tahfeez Mizan. All rights
+          reserved.
         </p>
       </div>
     </footer>
